@@ -94,6 +94,7 @@
   ],
   "initial_setup": "Configuración inicial",
   "modem_connection": "Conexión del módem",
+  "modem_type": "Tipo de módem",
   "modem_user_hint": "Consejo: Crea un usuario dedicado para DOCSight en lugar de usar tu cuenta de administrador principal.",
   "url": "URL",
   "username": "Usuario",

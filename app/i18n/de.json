@@ -94,6 +94,7 @@
   ],
   "initial_setup": "Ersteinrichtung",
   "modem_connection": "Modem-Verbindung",
+  "modem_type": "Modemtyp",
   "modem_user_hint": "Tipp: Lege einen eigenen Benutzer fuer DOCSight an, anstatt deinen Haupt-Admin zu verwenden.",
   "url": "URL",
   "username": "Benutzername",
