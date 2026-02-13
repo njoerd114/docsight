@@ -7,7 +7,6 @@ This directory contains modem drivers for DOCSight. Each driver implements the `
 - **fritzbox** - AVM FRITZ!Box Cable routers (full support)
 - **vodafone** - Vodafone Station (ARRIS TG3442DE)
   - ⚠️ **Note:** Error counters not available (set to 0). Power and SNR monitoring fully supported.
-- **vodafone** - Vodafone Station (ARRIS TG3442DE)
 
 ## Adding a New Driver
 

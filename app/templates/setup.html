@@ -498,10 +498,10 @@ function onModemTypeChange() {
     // Update hint based on modem type
     var hintEl = document.getElementById('modem-type-hint');
     if (modemType === 'vodafone') {
-        hintEl.textContent = 'Vodafone Station - Note: Error counters not available';
+        hintEl.textContent = '{{ t.vodafone_hint }}';
         hintEl.style.color = 'var(--warn)';
     } else {
-        hintEl.textContent = 'Select your modem/router type';
+        hintEl.textContent = '{{ t.modem_type_hint }}';
         hintEl.style.color = 'var(--muted)';
     }
     

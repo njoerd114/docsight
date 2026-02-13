@@ -148,7 +148,7 @@ class VodafoneStationDriver(Driver):
             session.headers.update({
                 "X-Requested-With": "XMLHttpRequest",
                 "csrfNonce": csrf_nonce_str,
-                "Origin": f"{url}/",
+                "Origin": url.rstrip("/"),
             })
             
             # 7. Finalize session

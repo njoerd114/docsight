@@ -1,7 +1,7 @@
 """Tests for modem driver interface and loader."""
 
 import pytest
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import Mock, patch
 from app.drivers.interface import Driver
 from app.drivers.loader import load_driver, get_available_drivers, AVAILABLE_DRIVERS
 from app.drivers.fritzbox import FritzBoxDriver

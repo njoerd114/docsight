@@ -1,7 +1,6 @@
 """Tests for Vodafone Station driver."""
 
-import pytest
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import Mock, patch
 from app.drivers.vodafone import VodafoneStationDriver
 from app.drivers.interface import Driver
 

@@ -126,6 +126,7 @@ class FritzBoxDriver(Driver):
                 try:
                     result["uptime_seconds"] = int(uptime)
                 except (ValueError, TypeError):
+                    # Ignore parsing errors and skip uptime if it's not a valid integer
                     pass
             return result
         except Exception as e:
