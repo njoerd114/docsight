@@ -94,6 +94,7 @@
   ],
   "initial_setup": "Configuration initiale",
   "modem_connection": "Connexion modem",
+  "modem_type": "Type de modem",
   "modem_user_hint": "Conseil : Créez un utilisateur dédié pour DOCSight au lieu d'utiliser votre compte administrateur principal.",
   "url": "URL",
   "username": "Nom d'utilisateur",
