@@ -415,6 +415,7 @@ def api_test_mqtt():
 
 
 @app.route("/api/modem-defaults/<modem_type>")
+@require_auth
 def api_modem_defaults(modem_type):
     """Get default configuration for a specific modem type."""
     from .config import MODEM_DEFAULTS
