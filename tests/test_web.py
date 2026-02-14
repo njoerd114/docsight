@@ -281,35 +281,6 @@ class TestFormatK:
 
 
 class TestModemDefaults:
-    """Test modem defaults API endpoint."""
-
-    def test_get_fritzbox_defaults(self, client):
-        """GET /api/modem-defaults/fritzbox returns FritzBox defaults."""
-        resp = client.get("/api/modem-defaults/fritzbox")
-        assert resp.status_code == 200
-        data = json.loads(resp.data)
-        assert "modem_url" in data
-        assert data["modem_url"] == "http://192.168.178.1"
-        assert "modem_user" in data
-
-    def test_get_vodafone_defaults(self, client):
-        """GET /api/modem-defaults/vodafone returns Vodafone defaults."""
-        resp = client.get("/api/modem-defaults/vodafone")
-        assert resp.status_code == 200
-        data = json.loads(resp.data)
-        assert "modem_url" in data
-        assert data["modem_url"] == "http://192.168.0.1"
-        assert data["modem_user"] == "admin"
-
-    def test_get_unknown_modem_defaults(self, client):
-        """GET /api/modem-defaults/unknown returns empty dict."""
-        resp = client.get("/api/modem-defaults/unknown")
-        assert resp.status_code == 200
-        data = json.loads(resp.data)
-        assert data == {}
-
-
-class TestModemDefaults:
     """Test modem-specific defaults API."""
 
     def test_get_fritzbox_defaults(self, client):
